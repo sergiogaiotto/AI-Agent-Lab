@@ -53,13 +53,13 @@ uvicorn app.main:app --reload --port 8000
 
 ## Debug
 
-# 1. Instale a Extensão de Debug
+### 1. Instale a Extensão de Debug
 A Microsoft separou o debugger em uma extensão própria. Se você quer usar o tipo debugpy, você precisa instalar esta extensão:
 . Vá no ícone de Extensões (Ctrl + Shift + X).
 . Busque por: "Python Debugger" (o autor deve ser Microsoft).
 . Clique em Instalar.
 
-# 2. Recarregue o VS Code (Obrigatório)
+### 2. Recarregue o VS Code (Obrigatório)
 . Pressione Ctrl + Shift + P.
 . Digite "Developer: Reload Window" e dê Enter.
 
