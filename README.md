@@ -1,4 +1,4 @@
-# AI Agents Lab — Fala Gaiotto
+# AI Agents Lab — Prof. Gaiotto
 
 Curso Prático de Agentes de IA (16h) com LangGraph, LangChain e OpenAI.
 
@@ -121,6 +121,4 @@ Acesse: http://localhost:8000
 ## Autor
 
 **Sergio Gaiotto**
-- Diretor Tech Dados & IA
-- Professor FIA lab.data e Inteli Exec
-- https://www.falagaiotto.com.br
+- Professor FIA lab.data
