@@ -36,8 +36,8 @@ cd ai-agents-course
 
 # 2. Criar ambiente virtual
 python -m venv venv
-# source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate   # Windows
+source venv/bin/activate  # Linux/Mac
+# venv\Scripts\activate   # Windows
 
 # 3. Instalar dependências
 pip install -r requirements.txt
@@ -50,6 +50,42 @@ cp .env .env.local
 # 5. Executar
 uvicorn app.main:app --reload --port 8000
 ```
+
+## Debug
+
+# 1. Instale a Extensão de Debug
+A Microsoft separou o debugger em uma extensão própria. Se você quer usar o tipo debugpy, você precisa instalar esta extensão:
+. Vá no ícone de Extensões (Ctrl + Shift + X).
+. Busque por: "Python Debugger" (o autor deve ser Microsoft).
+. Clique em Instalar.
+
+# 2. Recarregue o VS Code (Obrigatório)
+Como o erro diz que a "extensão falhou ao ativar", você precisa forçar o reinício dela:
+. Pressione Ctrl + Shift + P.
+. Digite "Developer: Reload Window" e dê Enter.
+
+
+'''
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: FastAPI",
+            "type": "python", // MUDAR AQUI
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "app.main:app",
+                "--reload",
+                "--port",
+                "8000"
+            ],
+            "jinja": true,
+            "justMyCode": true
+        }
+    ]
+}
+'''
 
 Acesse: http://localhost:8000
 
