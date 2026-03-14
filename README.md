@@ -147,7 +147,7 @@ Acesse: http://localhost:8000
 
 - **Backend**: Python 3.11+, FastAPI, Uvicorn
 - **Agentes**: LangGraph, LangChain, LangChain-OpenAI
-- **LLM**: OpenAI GPT-4o-mini (configurável)
+- **LLM**: OpenAI GPT-4.1 (configurável)
 - **Embeddings**: OpenAI text-embedding-3-small
 - **Vector Store**: FAISS (CPU)
 - **Busca Web**: DuckDuckGo Search
