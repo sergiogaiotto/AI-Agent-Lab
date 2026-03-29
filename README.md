@@ -9,22 +9,22 @@ Aplicação modular com 6 módulos progressivos, cada um construindo sobre o ant
 ```
 ai-agents-course/
 ├── app/
-│   ├── main.py              # FastAPI entry point
-│   ├── config.py             # Configuração (.env)
+│   ├── main.py                 # FastAPI entry point
+│   ├── config.py               # Configuração (.env)
 │   ├── agents/
-│   │   ├── __init__.py       # Utilitários compartilhados (get_llm)
-│   │   ├── react_agent.py    # Módulo 1 — ReAct Agent
-│   │   ├── codeact_agent.py  # Módulo 2 — CodeAct Agent
-│   │   ├── search_agent.py   # Módulo 3 — DuckDuckGo Search
+│   │   ├── __init__.py         # Utilitários compartilhados (get_llm)
+│   │   ├── react_agent.py      # Módulo 1 — ReAct Agent
+│   │   ├── codeact_agent.py    # Módulo 2 — CodeAct Agent
+│   │   ├── search_agent.py     # Módulo 3 — DuckDuckGo Search
 │   │   ├── reflection_agent.py # Módulo 4 — Self-Reflection
-│   │   ├── multi_agent.py    # Módulo 5 — Multi-Agent Workflow
-│   │   └── rag_agent.py      # Módulo 6 — Agentic RAG (FAISS)
+│   │   ├── multi_agent.py      # Módulo 5 — Multi-Agent Workflow
+│   │   └── rag_agent.py        # Módulo 6 — Agentic RAG (FAISS)
 │   └── routers/
-│       └── agents.py         # API endpoints (FastAPI Router)
+│       └── agents.py           # API endpoints (FastAPI Router)
 ├── templates/
-│   └── default.html          # Frontend SPA (Tailwind CSS)
-├── .env                      # Variáveis de ambiente
-├── requirements.txt          # Dependências Python
+│   └── default.html            # Frontend SPA (Tailwind CSS)
+├── .env                        # Variáveis de ambiente
+├── requirements.txt            # Dependências Python
 └── README.md
 ```
 
@@ -133,19 +133,19 @@ Acesse: http://localhost:8000
 
 ## API Endpoints
 
-| Método | Endpoint | Descrição |
-|--------|----------|-----------|
-| GET | `/` | Frontend SPA |
-| GET | `/api/health` | Health check |
-| POST | `/api/react` | ReAct Agent |
-| POST | `/api/codeact` | CodeAct Agent |
-| POST | `/api/search` | DuckDuckGo Search |
-| POST | `/api/reflection` | Self-Reflection Agent |
-| POST | `/api/multi-agent` | Multi-Agent Workflow |
-| POST | `/api/rag/upload` | Upload documento para KB |
-| GET | `/api/rag/knowledge-bases` | Listar KBs |
+| Método | Endpoint                          | Descrição |
+|--------|-----------------------------------|-----------|
+| GET    | `/`                               | Frontend SPA |
+| GET    | `/api/health`                     | Health check |
+| POST   | `/api/react`                      | ReAct Agent |
+| POST   | `/api/codeact`                    | CodeAct Agent |
+| POST   | `/api/search`                     | DuckDuckGo Search |
+| POST   | `/api/reflection`                 | Self-Reflection Agent |
+| POST   | `/api/multi-agent`                | Multi-Agent Workflow |
+| POST   | `/api/rag/upload`                 | Upload documento para KB |
+| GET    | `/api/rag/knowledge-bases`        | Listar KBs |
 | DELETE | `/api/rag/knowledge-bases/{name}` | Excluir KB |
-| POST | `/api/rag/chat` | Chat com KB |
+| POST   | `/api/rag/chat`                   | Chat com KB |
 
 ## Stack Tecnológica
 
