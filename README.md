@@ -35,9 +35,9 @@ ai-agents-course/
 cd ai-agents-course
 
 # 2. Criar ambiente virtual
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# venv\Scripts\activate   # Windows
+python -m venv .venv
+# source venv/bin/activate  # Linux/Mac
+.venv\Scripts\activate   # Windows
 
 # 3. Instalar dependências
 pip install -r requirements.txt
@@ -49,6 +49,10 @@ cp .env .env.local
 
 # 5. Executar
 uvicorn app.main:app --reload --port 8000
+
+# 5.1. Executar no OnRender
+uvicorn app.main:app --host 0.0.0.0 --port $PORT (colocar como comando START)
+
 ```
 
 ## Debug
