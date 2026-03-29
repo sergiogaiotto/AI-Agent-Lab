@@ -1,6 +1,6 @@
 # AI Agents Lab — Prof. Gaiotto
 
-Curso Prático de Agentes de IA (16h) com LangGraph, LangChain e OpenAI.
+Curso Prático de Agentes de IA com LangGraph, LangChain e OpenAI.
 
 Aplicação modular com 6 módulos progressivos, cada um construindo sobre o anterior.
 
